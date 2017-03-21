@@ -17,6 +17,7 @@ p {
 	margin-bottom: 1.8em;
 }
 
+
 h2,
 h3,
 a {
@@ -56,12 +57,24 @@ ul {
     float: left;
     font-weight: bold;
     margin: 10px;
+    font-size: 1.0em;
 }
 #right-footer-link {
     float: right;
+    font-size: .90em;
     font-weight: bold;
     margin: 10px;
+    text-transform: uppercase;    
 }
+
+#right-footer-link a:visited{
+     color: black;
+}
+
+#right-footer-link a:hover{
+     color: #093a58;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -106,11 +119,6 @@ ul {
     text-align: center;
 }
 
-.main-footer {
-    text-align: center;
-}
-
-
 
 /*CREATE GUTTERS */
 .col {
@@ -124,25 +132,23 @@ ul {
 	background: #F8F8F8;
 	padding: 2em 0;
 	margin-top: 30px;
+    text-align: center;
 }
 
-/* ---- Page Elements ---- */
-
-.logo {
-	width: 190px;
-}
-
-.headline {
-    margin: 0;
-}
 
 /* ================================= 
   Media Queries
 ==================================== */
 /* 320 px or wider */
 @media (min-width: 320px) {  
+    
+    
+    .name {
+        font-size: 1.75em;        
+    }
+    
      .main-nav li {
-        background: #FFFAFA;
+        background: #FBFCFC;
     }
     .main-nav a {
            padding: 10px 15px;
@@ -164,43 +170,57 @@ ul {
         text-align: center;     
     }
     
+    h4  {
+    text-transform: uppercase;
+    }
+    
+    
 }
-
-
 
 
 /* 768 px or wider */
 @media (min-width: 768px) {
     
-    .container {
-        width: 90%;
-        margin: 0 auto;
+    .main-nav li {
+        background: #FFFFFF;
     }
     
-    .col
-    {
-        float: left;     
+    .container {
+        width:90%;
+        margin: auto 0;
     }
+    
+     .col {
+        float: left;
+    }
+    
+  
     
     .primary,
-    .secondary {
-        width: 50%;
+    .secondary,
+    .tertiary
+   {
+        width:49%;
     }
     
-    .main-nav {
-        float: right;
-    }
-    
+
     .main-nav li {
         display: inline-block; /* display side by side */
-        margin-left: 15px;
         list-style: none;
     }
     
-    .tagline {
-        font-size: 1.4em;
+    .profile-img {
+        max-width: 40%;
+        float: right;
     }
-
+    
+    .port-img {
+        max-width: 85%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+ 
 
 	/* ---- Float clearfix ---- */
 
@@ -210,9 +230,7 @@ ul {
 		clear: both;
 	}
     
-     img {
-        max-width: 80%;
-    }
+
 
 }
 
