@@ -185,23 +185,27 @@ ul {
         background: #FFFFFF;
     }
     
-    .container {
-        width:90%;
-        margin: auto 0;
+   .container {
+       clear: both;
     }
     
-     .col {
+    .col {     
+        width: 95%;
+		margin: auto;
+		display: inline-block;
+    }
+    
+    .left {
         float: left;
+        width: 45%;
+    }
+    
+   .right {
+        float: right;
+        width: 45%;
     }
     
   
-    
-    .primary,
-    .secondary,
-    .tertiary
-   {
-        width:49%;
-    }
     
 
     .main-nav li {
@@ -215,7 +219,7 @@ ul {
     }
     
     .port-img {
-        max-width: 85%;
+        max-width: 90%;
         margin-top: 15px;
         margin-bottom: 15px;
     }
