@@ -245,6 +245,10 @@ ul {
        
     }
     
+    #left-footer-link {
+        font-size: .95em;
+    }
+    
     #right-footer-link {
         display: none;
     }
@@ -259,8 +263,7 @@ ul {
 	    text-transform: uppercase;
         margin: 10px;
         display: inline-block;
-      
-       
+        font-size: .95em;  
     }
     
     .right-footer-nav a:visited{
@@ -281,24 +284,45 @@ ul {
 
 }
 
-/* 1025 px or wider */
+/* 1024 px or wider */
 @media (min-width: 1024px) {
     .container {
-        width: 80%;
+        width: 90%;
         max-width: 1150px;
     }
     
-    .primary {
-        width: 40%;
+    #intro p {
+        font-size: 1.2em;
     }
     
-    .secondary,
-    .tertiary {
-     width: 30%     
+    .main-footer p {
+        font-size: 1em;
     }
     
-     img {
-        max-width: 95%;
+    .name {
+        float: left;
+        margin-left: 50px;
     }
+    
+     .main-nav  {
+        float: right;
+        margin-left: 50px;
+    }
+    
+    .row-one {
+        display: inline-block;
+    }
+    
+    .row-two {
+        
+    }
+    
+     .left,
+    .right {
+        float: left;
+        width: 33%;    
+    }
+
+ 
     
 }
