@@ -148,6 +148,7 @@ ul {
     
     .main-nav li {
         background: #FBFCFC;
+        font-weight: 900;
     }
     .main-nav a {
            padding: 10px 15px;
@@ -171,6 +172,10 @@ ul {
     
     h4  {
     text-transform: uppercase;
+    }
+    
+    .right-footer-nav li {
+        display: none; /* found on MDN */
     }
     
     
@@ -201,24 +206,23 @@ ul {
         width: 95%;
 		margin: auto;
 		display: inline-block;
-        padding-bottom: 35px;
+        padding-bottom: 50px;
     }
     
     .left {
         float: left;
-        width: 50%;
-        overflow: hidden;
-        
+        width: 50%;    
     }
     
    .right {
         float: right;
         width: 50%;
-       overflow: hidden;
+     
     }
     
     #title {
-        margin-top: 20px;
+        margin-top: 50px;
+         margin-bottom: 50px;
     }
     
   
@@ -230,7 +234,7 @@ ul {
     .profile-img {
         max-width: 40%;
         float: right;
-         padding-left: 15px;
+        padding-left: 15px;
         margin-top: 5px;
     }
     
@@ -239,6 +243,28 @@ ul {
         margin-top: 15px;
         margin-bottom: 15px;
        
+    }
+    
+    #right-footer-link {
+        display: none;
+    }
+    
+    .right-footer-nav  {
+        float: right;
+    }
+    
+    .right-footer-nav li {    
+        color: black;
+        font-weight: bold;
+	    text-transform: uppercase;
+        margin: 10px;
+        display: inline-block;
+      
+       
+    }
+    
+    .right-footer-nav a:visited{
+      color: black;
     }
     
  
