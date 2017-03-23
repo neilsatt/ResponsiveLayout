@@ -53,6 +53,12 @@ ul {
     font-weight: bolder;
 }
 
+#contact-content {
+    max-width: 75%;
+    margin: auto;
+}
+
+
 #left-footer-link {
     float: left;
     font-weight: bold;
@@ -64,7 +70,7 @@ ul {
     font-size: .90em;
     font-weight: bold;
     margin: 10px;
-    text-transform: uppercase;    
+    text-transform: uppercase;  
 }
 
 #right-footer-link a:visited{
@@ -128,10 +134,11 @@ ul {
 
 
 .main-footer {
-	background: #F8F8F8;
+	background: #D8D8D8;
 	padding: 2em 0;
 	margin-top: 30px;
     text-align: center;
+    border-top: 1px solid black;
 }
 
 /* CSS from original 320 media query */
@@ -142,7 +149,7 @@ ul {
     }
     
     .main-nav li {
-        background: #FBFCFC;
+        background: #E8E8E8;
         font-weight: 900;
     }
     .main-nav a {
@@ -195,7 +202,7 @@ ul {
     .name,
     .main-header,
     #intro {
-        background-color: #F8F8F8; 
+        background-color: #E8E8E8; 
     }
 
     
@@ -283,13 +290,16 @@ ul {
 
 /* 1024 px or wider */
 @media (min-width: 1024px) {
-    .container {
-        width: 90%;
-        max-width: 1150px;
-    }
+
     
+    .col {
+        width: 100%;
+    }
+
     #intro p {
         font-size: 1.2em;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
     .main-footer p {
@@ -303,7 +313,7 @@ ul {
     
      .main-nav  {
         float: right;
-        margin-left: 50px;
+        margin-right: 50px;
     }
     
     .row-one {
