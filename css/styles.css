@@ -134,13 +134,8 @@ ul {
     text-align: center;
 }
 
+/* CSS from original 320 media query */
 
-/* ================================= 
-  Media Queries
-==================================== */
-/* 320 px or wider */
-@media (min-width: 320px) {  
-    
     
     .name {
         font-size: 1.75em;        
@@ -177,9 +172,11 @@ ul {
     .right-footer-nav li {
         display: none; /* found on MDN */
     }
-    
-    
-}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
 
 
 /* 768 px or wider */
