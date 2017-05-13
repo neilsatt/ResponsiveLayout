@@ -1,0 +1,73 @@
+8 TOTAL STEPS
+
+
+1) Organize your Sass files 
+- Create a scss folder - DONE
+- Create subfolders - DONE
+- Each subfolder should have _index file and at least one SCSS partial
+- Create at least one partial
+- Make sure you have a folder for your compiled CSS
+
+
+2) Create your Partial files
+-  Group related sections of CSS into SCSS partials
+
+
+
+3) Create an application.scss file in the root of your project
+- Import all of your _index.scss partials into it
+- Make sure your imports are listed in the correct order for styling
+
+
+
+4) Find repeating patterns in the stylesheet and extract them into placeholder selectors, 
+then extend them wherever necessary.
+- Create at least one placeholder selector
+- Extend three CSS selectors with your placeholder using the @extend keyword
+
+
+5) Create variables for repeating values
+- At minimum, create variables for:
+	All color values
+	All media query breakpoints
+- Make sure you use your color variable in your project to replace 
+- ALL instances of that color property values
+
+6) Nest your media queries in their respective rules and use your breakpoints variables 
+to define ALL the breakpoint widths
+
+
+7) Create at least one mixin for a common text pattern. As a minimum, include the following 
+arguments in your mixin:
+
+- font-size
+- font-weight
+- color
+- Add your mixin as a declaration using @include in at least three rules where any 
+   of the text properties listed above are present
+
+
+8) Create at least one example of a nested Sass rule that is not a media query. Remember to make 
+sure that nested rules are not greater than 3 levels deep, excluding when a nested mixin is present.
+
+A nested Sass example:
+nav {
+   ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+  li { 
+        display: inline-block;
+  }
+  a {
+       display: block;
+       padding: 6px 12px;
+       text-decoration: none;
+   }
+}
+
+
+
+You don’t need to make any changes to your original design, but be sure to compile your CSS and make sure 
+the site is still responsive and works well on different screen sizes before you submit for grading.
